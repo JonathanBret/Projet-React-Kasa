@@ -1,0 +1,36 @@
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    padding-top: 2%;
+}
+
+.header-nav {
+    display: flex;
+    width: 27%; /* Ajuste la largeur à ton besoin, ex : 30% ou 300px */
+    margin-left: auto;
+}
+
+
+.header-logo {
+        height: 45px;
+    }
+
+.header-link {
+        margin-left: 50px;
+        text-decoration: none;
+        color: #333;
+
+        &:hover {
+            color: red;
+        }
+    }
+
+.home {
+    color: blue;
+
+}
+
+
