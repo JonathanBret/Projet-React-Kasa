@@ -1,5 +1,5 @@
-const Acceuil = () => {
-    return <div><h1>Acceuil</h1></div>;
+const Home = () => {
+    return null;
 };
 
-export default Acceuil;
+export default Home;
