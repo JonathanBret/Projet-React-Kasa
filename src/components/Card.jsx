@@ -1,4 +1,5 @@
 import logements from "../data/logements.json"
+import "../style/Card.scss"
 
 const Card = () => {
     return (
