@@ -1,9 +1,15 @@
+.card-container {
+    background-color:#F6F6F6;  // Gris clair
+    padding: 40px;             
+    border-radius: 15px;        
+    width: 85%;
+    }
+
 .all-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr); // 3 colonnes de taille égale
     gap: 20px; // Espace entre les cartes
     padding: 20px;
-    width: 90%;
 }
 
 .card {
