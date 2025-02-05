@@ -1,7 +1,7 @@
 .banner {
     background: linear-gradient(
-        rgba(0, 0, 0, 0.5), 
-        rgba(0, 0, 0, 0.5)
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
     ), url("/src/assets/background1.png");
     background-size: cover;
     background-position: center;
@@ -13,7 +13,7 @@
     color: white;
     font-size: 17px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-bottom: 7%;
+    margin-bottom: 3%;
     border-radius: 25px;
     margin-top: 10%;
     z-index: 1;
