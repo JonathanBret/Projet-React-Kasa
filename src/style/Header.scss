@@ -25,10 +25,21 @@ header {
         margin-left: 50px;
         text-decoration: none;
         color: #333;
+        position: relative;
+        transition: transform 0.3s ease;
 
         &:hover {
-            color: red;
+            color: black;
+            transform: translateY(-5px);
         }
     }
-
+    .header-link.active::after {
+        content: "";
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        width: 100%;
+        height: 2px; 
+        background-color: black; 
+    }
 

@@ -1,5 +1,11 @@
+import Header from "../components/Header";
+
 const Propos = () => {
-    return null;
+    return (
+        <>
+         <Header />
+        </>
+    );
 };
 
 export default Propos;
