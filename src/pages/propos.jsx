@@ -6,7 +6,7 @@ const Propos = () => {
     return (
         <>
             <Header />
-            <Banner image={Background2} />
+            <Banner image={Background2} showText={false} overlayOpacity={0.3} />
         </>
     );
 };

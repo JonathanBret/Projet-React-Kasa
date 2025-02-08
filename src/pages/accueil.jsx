@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <>
             <Header />
-            <Banner image={Background1} />
+            <Banner image={Background1}/>
             <Card />
         </>
     );
