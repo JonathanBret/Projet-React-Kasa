@@ -1,0 +1,29 @@
+.dropdown-list {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .dropdown-item {
+    margin-bottom: 10px;
+  }
+  
+  .dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    background-color: #FF6060; /* Fond rouge pour la ligne */
+  }
+  
+  .dropdown-content {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #F6F6F6; /* Le fond normal pour la zone de texte */
+    color: black;
+  }
+  
