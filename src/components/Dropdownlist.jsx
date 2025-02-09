@@ -10,21 +10,27 @@ const data = [
 ];
 
 const DropdownList = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndexes, setOpenIndexes] = useState([]);
 
   const toggleItem = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
+    if (openIndexes.includes(index)) {
+      setOpenIndexes(openIndexes.filter((i) => i !== index)); 
+    } else {
+      setOpenIndexes([...openIndexes, index]); 
+    }
   };
 
   return (
     <div className="dropdown-list">
       {data.map((item, index) => (
-        <div key={index} className="dropdown-item">
+        <div key={index} className={`dropdown-item ${openIndexes.includes(index) ? "open" : ""}`}>
           <div className="dropdown-header" onClick={() => toggleItem(index)}>
             <span>{item.title}</span>
-            {openIndex === index ? <FaChevronUp /> : <FaChevronDown />}
+            {openIndexes.includes(index) ? <FaChevronUp /> : <FaChevronDown />}
           </div>
-          {openIndex === index && <div className="dropdown-content">{item.content}</div>}
+          {openIndexes.includes(index) && (
+            <div className="dropdown-content">{item.content}</div>
+          )}
         </div>
       ))}
     </div>

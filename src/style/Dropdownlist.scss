@@ -1,11 +1,12 @@
 .dropdown-list {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+    width: 60%;
+    margin-left: 18%;
+    margin-right: 0;
   }
   
   .dropdown-item {
     margin-bottom: 10px;
+    width: 100%;
   }
   
   .dropdown-header {
@@ -18,6 +19,8 @@
     background-color: white;
     color: black;
     background-color: #FF6060; /* Fond rouge pour la ligne */
+    color: white;
+    font-weight: bold;
   }
   
   .dropdown-content {
