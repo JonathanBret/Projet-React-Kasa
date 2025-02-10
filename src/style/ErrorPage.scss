@@ -1,0 +1,45 @@
+.error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #ff6060;
+    font-family: 'Arial', sans-serif;
+  
+    h1 {
+      font-size: 8rem;
+      font-weight: bold;
+      margin: 0;
+      font-family: Montserrat;
+    }
+  
+    p {
+      font-size: 1.5rem;
+      margin: 20px 0;
+    }
+  
+   a {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: black; /* Assurez-vous que la couleur est bien appliquée */
+      position: relative;
+      padding-bottom: 5px;
+    }
+  
+    a::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: black; /* Le trait sous le texte doit aussi être noir */
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  
