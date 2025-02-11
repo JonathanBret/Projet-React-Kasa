@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
 .error-page {
     display: flex;
     flex-direction: column;
@@ -5,9 +8,8 @@
     justify-content: center;
     height: 100vh;
     text-align: center;
-    background-color: #f8f8f8;
     color: #ff6060;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   
     h1 {
       font-size: 8rem;
@@ -18,7 +20,7 @@
   
     p {
       font-size: 1.5rem;
-      margin: 20px 0;
+      margin: 30px 0;
     }
   
    a {
@@ -29,6 +31,7 @@
       color: black; /* Assurez-vous que la couleur est bien appliquée */
       position: relative;
       padding-bottom: 5px;
+      padding-top: 5%;
     }
   
     a::after {

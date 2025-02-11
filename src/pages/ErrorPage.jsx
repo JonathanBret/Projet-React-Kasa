@@ -9,7 +9,7 @@ const ErrorPage = () => {
       <div className="error-page">
         <h1>404</h1>
         <p>Oups ! La page que vous demandez n&apos;existe pas.</p>
-        <Link to="/">Retourner à l&apos;accueil</Link>
+        <Link to="/">Retourner sur la page d&apos;accueil</Link>
       </div>
     </>
   );
