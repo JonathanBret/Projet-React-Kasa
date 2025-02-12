@@ -5,12 +5,12 @@
     padding: 20px;
   
     .logement-image {
-      width: 90%;
-      max-height: 400px;
-      object-fit: cover;
-      border-radius: 10px;
-      padding-top: 10%;
-    }
+        width: 90%;
+        max-height: 415px;
+        object-fit: cover;
+        border-radius: 25px;
+        margin-top: 10%; 
+      }      
   
     .logement-info {
       display: flex;
@@ -82,5 +82,59 @@
         }
       }
     }
+    /* Logement.scss */
+/* Logement.scss */
+.dropdowns-container {
+    display: flex;
+    justify-content: space-between;  /* Équilibre l'espace entre les deux sections */
+    margin-top: 20px;
+    width: 90%;
+  }
+  
+  .dropdown {
+    width: 48%;  /* Prend environ la moitié de l'espace, ajustable selon tes besoins */
+  }
+  
+  .dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6060;  /* Fond rouge */
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .arrow {
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow.open {
+    transform: rotate(180deg);  /* Rotation de la flèche quand la section est ouverte */
+  }
+  
+  .dropdown-content {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    height: 70%;
+  }
+  
+  .dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-content li {
+    padding: 5px 0;
+  }  
+
+  .dropdown-content p {
+    margin-top: 8px;
+  }
+  
   }
   
