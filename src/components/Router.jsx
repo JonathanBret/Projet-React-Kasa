@@ -1,15 +1,16 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from '../pages/accueil';
-import Propos from '../pages/propos';
-import ErrorPage from '../pages/errorPage'; // Import de la page d'erreur
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "../pages/accueil";
+import Propos from "../pages/propos";
+import Logement from "../pages/Logement"; // Importe la nouvelle page
 
 const AppRouter = () => {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/Propos' element={<Propos />} />
-        <Route path='*' element={<ErrorPage />} /> {/* Page 404 */}
+        <Route path="/" element={<Home />} />
+        <Route path="/propos" element={<Propos />} />
+        <Route path="/logement/:id" element={<Logement />} />
+        <Route path="*" element={<div>Page non trouvée</div>} />
       </Routes>
     </Router>
   );
