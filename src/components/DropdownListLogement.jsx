@@ -1,7 +1,6 @@
-// src/components/DropdownListLogement.jsx
 import { useState } from "react";
 import PropTypes from "prop-types";
-import { FaChevronUp, FaChevronDown } from "react-icons/fa";  // Import des icônes
+import { FaChevronUp, FaChevronDown } from "react-icons/fa";  
 
 const DropdownListLogement = ({ description, equipements }) => {
   const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
@@ -12,7 +11,6 @@ const DropdownListLogement = ({ description, equipements }) => {
 
   return (
     <div className="dropdowns-container">
-      {/* Section Description */}
       <div className="dropdown">
         <div className="dropdown-header" onClick={toggleDescription}>
           <span>Description</span>
@@ -27,7 +25,6 @@ const DropdownListLogement = ({ description, equipements }) => {
         )}
       </div>
 
-      {/* Section Equipements */}
       <div className="dropdown">
         <div className="dropdown-header" onClick={toggleEquipements}>
           <span>Équipements</span>
@@ -49,7 +46,6 @@ const DropdownListLogement = ({ description, equipements }) => {
   );
 };
 
-// Validation des props
 DropdownListLogement.propTypes = {
   description: PropTypes.string.isRequired,
   equipements: PropTypes.arrayOf(PropTypes.string).isRequired,

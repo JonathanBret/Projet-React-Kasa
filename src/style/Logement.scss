@@ -82,24 +82,23 @@
         }
       }
     }
-    /* Logement.scss */
-/* Logement.scss */
+
 .dropdowns-container {
     display: flex;
-    justify-content: space-between;  /* Équilibre l'espace entre les deux sections */
+    justify-content: space-between; 
     margin-top: 20px;
     width: 90%;
   }
   
   .dropdown {
-    width: 48%;  /* Prend environ la moitié de l'espace, ajustable selon tes besoins */
+    width: 48%;  
   }
   
   .dropdown-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ff6060;  /* Fond rouge */
+    background-color: #ff6060; 
     padding: 10px;
     cursor: pointer;
     color: white;
@@ -111,9 +110,6 @@
     transition: transform 0.3s ease;
   }
   
-  .arrow.open {
-    transform: rotate(180deg);  /* Rotation de la flèche quand la section est ouverte */
-  }
   
   .dropdown-content {
     padding: 10px;
