@@ -1,0 +1,48 @@
+import { useState } from "react";
+import PropTypes from "prop-types";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import "../style/ImageCarousel.scss"; // Ajoute un fichier de style spécifique
+
+const ImageCarousel = ({ pictures, title }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevImage = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? pictures.length - 1 : prevIndex - 1
+    );
+  };
+
+  const nextImage = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === pictures.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  return (
+    <div className="carousel">
+      <img src={pictures[currentIndex]} alt={title} className="carousel-image" />
+
+      {/* Flèche gauche */}
+      {pictures.length > 1 && (
+        <button className="carousel-button left" onClick={prevImage}>
+          <FaChevronLeft />
+        </button>
+      )}
+
+      {/* Flèche droite */}
+      {pictures.length > 1 && (
+        <button className="carousel-button right" onClick={nextImage}>
+          <FaChevronRight />
+        </button>
+      )}
+    </div>
+  );
+};
+
+// Validation des props
+ImageCarousel.propTypes = {
+  pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
+  title: PropTypes.string.isRequired,
+};
+
+export default ImageCarousel;

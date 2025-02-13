@@ -1,11 +1,12 @@
-// src/components/LogementInfo.jsx
 import PropTypes from "prop-types";
 import DropdownListLogement from "./DropdownListLogement";
+import ImageCarousel from "./ImageCarousel";
+
 
 const LogementInfo = ({ logement }) => {
   return (
     <div className="logement-page">
-      <img src={logement.cover} alt={logement.title} className="logement-image" />
+      <ImageCarousel pictures={logement.pictures} title={logement.title} />
 
       <div className="logement-info">
         <div className="logement-details">
@@ -54,6 +55,7 @@ LogementInfo.propTypes = {
     rating: PropTypes.number.isRequired,
     description: PropTypes.string.isRequired,
     equipments: PropTypes.arrayOf(PropTypes.string).isRequired,
+    pictures: PropTypes.arrayOf(PropTypes.string).isRequired, // ✅ Ajout ici
   }).isRequired,
 };
 

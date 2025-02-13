@@ -15,7 +15,7 @@
     .logement-info {
       display: flex;
       justify-content: space-between;
-      width: 90%;
+      width: 95%;
       margin-top: 20px;
   
       .logement-details {
@@ -41,6 +41,7 @@
           .tag {
             background-color: #ff6060;
             color: white;
+            font-weight: 600;
             padding: 3px 20px;  
             border-radius: 10px; 
             min-width: 95px; 
@@ -87,7 +88,7 @@
     display: flex;
     justify-content: space-between; 
     margin-top: 20px;
-    width: 90%;
+    width: 95%;
   }
   
   .dropdown {
