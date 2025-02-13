@@ -32,7 +32,6 @@ const LogementInfo = ({ logement }) => {
         </div>
       </div>
 
-      {/* Ajouter le composant DropdownListLogement */}
       <DropdownListLogement 
         description={logement.description} 
         equipements={logement.equipments} 
@@ -41,7 +40,6 @@ const LogementInfo = ({ logement }) => {
   );
 };
 
-// Validation des props
 LogementInfo.propTypes = {
   logement: PropTypes.shape({
     cover: PropTypes.string.isRequired,
