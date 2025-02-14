@@ -1,5 +1,4 @@
-// src/pages/Logement.jsx
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom"; 
 import logements from "../data/logements.json";
 import "../style/Logement.scss";
 import Header from "../components/Header";
@@ -10,8 +9,8 @@ const Logement = () => {
   const logement = logements.find((item) => item.id === id);
 
   if (!logement) {
-    return <div>Logement non trouvé</div>;
-  }
+    return <Navigate to="/error" replace />; 
+  }  
 
   return (
     <>
