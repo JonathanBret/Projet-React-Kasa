@@ -40,3 +40,27 @@
         color: #333;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .card-container{
+        padding: 0;
+        margin-top: 5%;
+        margin-left: 5%;
+        background-color: white;
+    }
+
+    .all-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        padding: 0;
+        width: 335px;
+    }
+
+    .card{
+        height:  255px;
+
+    &:hover {
+        transform: none;
+    }
+}
+}

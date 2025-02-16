@@ -38,4 +38,16 @@
   .carousel-button:hover {
     background: rgba(0, 0, 0, 0.8);
   }
+
+  @media screen and (max-width: 480px) {
+    .carousel-image{
+      width: 335px;
+      height: 255px;
+    }
+
+.carousel{
+  padding-top: 10%;
+}
+    
+  }
   

@@ -44,3 +44,29 @@ header {
         background-color: black; 
     }
 
+    @media screen and (max-width: 480px) {
+        .header {
+            width: 480px;
+            padding-bottom: 15px;
+            margin-left: 2%;
+            padding-top: 3%;
+        }
+
+        .header-logo{
+            height: 30px;
+        }
+
+        .header-nav{
+            font-size: 14px;
+            margin-left: 40px;
+            width: 480px;
+        }
+
+        .header-link{
+            transition: none;
+        
+         &:hover{
+            transform: none;
+        }}
+    }
+

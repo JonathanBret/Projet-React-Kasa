@@ -18,7 +18,7 @@
     cursor: pointer;
     background-color: white;
     color: black;
-    background-color: #FF6060; /* Fond rouge pour la ligne */
+    background-color: #FF6060;
     color: white;
     font-weight: bold;
   }
@@ -26,7 +26,12 @@
   .dropdown-content {
     padding: 10px;
     font-size: 16px;
-    background-color: #F6F6F6; /* Le fond normal pour la zone de texte */
+    background-color: #F6F6F6; 
     color: black;
   }
   
+  @media screen and (max-width: 480px) {
+    .dropdowns-container{
+      margin-left: 6%;
+    }
+  }

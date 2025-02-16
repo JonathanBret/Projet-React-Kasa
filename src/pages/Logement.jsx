@@ -10,12 +10,17 @@ const Logement = () => {
 
   if (!logement) {
     return <Navigate to="/error" replace />; 
-  }  
+  }
+
+  const logementWithNumberRating = {
+    ...logement,
+    rating: Number(logement.rating)  
+  };
 
   return (
     <>
       <Header />
-      <LogementInfo logement={logement} />
+      <LogementInfo logement={logementWithNumberRating} />
     </>
   );
 };
