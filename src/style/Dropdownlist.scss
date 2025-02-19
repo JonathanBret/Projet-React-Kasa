@@ -34,6 +34,27 @@
   
   @media screen and (max-width: 480px) {
     .dropdowns-container{
-      margin-left: 6%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dropdown-list{
+      margin-left: 5%;
+      margin-right: 0;
+      width: 90%;
+      margin-top: 5%;
+    }
+
+    .logement-page .dropdowns-container .dropdown{
+      padding-bottom: 7%;
+      width: 100%;
+    }
+
+    .logement-page .dropdowns-container .dropdown .dropdown-header{
+      padding: 6px;
+    }
+
+    .dropdown-list .dropdown-item .dropdown-header{
+      padding: 6px;
     }
   }

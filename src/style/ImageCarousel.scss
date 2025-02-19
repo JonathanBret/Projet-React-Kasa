@@ -15,12 +15,12 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
+    background: none;
     border: none;
     color: white;
     padding: 10px;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 35px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -37,6 +37,7 @@
   
   .carousel-button:hover {
     background: rgba(0, 0, 0, 0.8);
+    transition: 1s ease;
   }
 
   @media screen and (max-width: 480px) {
@@ -45,8 +46,17 @@
       height: 255px;
     }
 
+    .logement-page .carousel-button{
+      background: none;
+    font-size: 25px;
+    }
+
 .carousel{
   padding-top: 10%;
+}
+
+.carousel-image{
+  border-radius: 10px;
 }
     
   }
