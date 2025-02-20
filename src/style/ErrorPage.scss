@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
+@use "../style/variables" as *;
+@use "../style/mixins" as *;
 
 .error-page {
     display: flex;
@@ -8,52 +8,52 @@
     justify-content: center;
     height: 100vh;
     text-align: center;
-    color: #ff6060;
-    font-family: 'Montserrat', sans-serif;
-  
+    color: $primary-color;
+    font-family: $main-font;
+
     h1 {
-      font-size: 8rem;
-      font-weight: bold;
-      margin: 0;
-      font-family: Montserrat;
-      padding: 6% 0 2% 0;
+        font-size: 8rem;
+        font-weight: bold;
+        margin: 0;
+        padding: 6% 0 2% 0;
     }
-  
+
     p {
-      font-size: 1.5rem;
-      margin: 20px 0;
+        @include text-style(1.5rem, 20px 0);
     }
-  
-   a {
-      display: inline-block;
-      margin-top: 20px;
-      font-size: 0.9rem;
-      text-decoration: none;
-      color: black; 
-      position: relative;
-      padding-top: 5%;
+
+    a {
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: black; 
+        position: relative;
+        padding-top: 5%;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: black; 
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
     }
-  
-    a::after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 1px;
-      background-color: black; 
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-.error-page h1{
-  font-size: 6rem;
 }
 
-.error-page p{
-  font-size: 1.4rem;
-  width: 90%;
-  margin-top: 15%;
+@include responsive(mobile) {
+    .error-page {
+        h1 {
+            font-size: 6rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+            width: 90%;
+            margin-top: 15%;
+        }
+    }
 }
-  }

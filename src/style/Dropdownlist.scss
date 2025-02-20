@@ -1,15 +1,19 @@
+@use "../style/variables" as *; 
+@use "../style/mixins" as *;
+
 .dropdown-list {
     width: 60%;
     margin-left: 18%;
     margin-right: 0;
-  }
-  
-  .dropdown-item {
+}
+
+.dropdown-item {
     margin-bottom: 19px;
     width: 100%;
-  }
-  
-  .dropdown-header {
+}
+
+
+@mixin dropdown-header-style {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,44 +21,54 @@
     font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
-    background-color: white;
-    color: black;
-    background-color: #FF6060;
+    background-color: $primary-color;
     color: white;
     font-weight: bold;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-header {
+    @include dropdown-header-style;
+}
+
+.dropdown-content {
     padding: 10px;
     font-size: 15px;
-    background-color: #F6F6F6; 
+    background-color: $background-light; 
     color: black;
     font-weight: 300;
-  }
-  
-  @media screen and (max-width: 480px) {
-    .dropdowns-container{
-      display: flex;
-      flex-direction: column;
+}
+
+@include responsive(mobile) {
+    .dropdowns-container {
+        display: flex;
+        flex-direction: column;
     }
 
-    .dropdown-list{
-      margin-left: 5%;
-      margin-right: 0;
-      width: 90%;
-      margin-top: 5%;
+    .dropdown-list {
+        margin-left: 5%;
+        margin-right: 0;
+        width: 90%;
+        margin-top: 5%;
     }
 
-    .logement-page .dropdowns-container .dropdown{
-      padding-bottom: 7%;
-      width: 100%;
+    .logement-page {
+        .dropdowns-container {
+            .dropdown {
+                padding-bottom: 7%;
+                width: 100%;
+
+                .dropdown-header {
+                    padding: 6px;
+                }
+            }
+        }
     }
 
-    .logement-page .dropdowns-container .dropdown .dropdown-header{
-      padding: 6px;
+    .dropdown-list {
+        .dropdown-item {
+            .dropdown-header {
+                padding: 6px;
+            }
+        }
     }
-
-    .dropdown-list .dropdown-item .dropdown-header{
-      padding: 6px;
-    }
-  }
+}

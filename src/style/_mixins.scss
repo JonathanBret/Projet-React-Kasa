@@ -1,0 +1,19 @@
+@mixin card-hover {
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
+
+@mixin responsive($size) {
+    @if $size == mobile {
+        @media screen and (max-width: 480px) { @content; }
+    }
+}
+
+@mixin text-style($size, $margin) {
+    font-size: $size;
+    margin: $margin;
+}
+
