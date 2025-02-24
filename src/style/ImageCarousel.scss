@@ -1,23 +1,26 @@
+@use "../style/mixins" as *;
+@use "../style/variables" as *;
+
 .carousel {
     position: relative;
     width: 95%;
     margin-top: 8%;
-  }
-  
-  .carousel-image {
+}
+
+.carousel-image {
     width: 100%;
     height: 400px;
     object-fit: cover;
-  }
-  
-  
-  .carousel-button {
+    border-radius: $border-radius;
+}
+
+.carousel-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background: none;
     border: none;
-    color: white;
+    color: $white;
     padding: 10px;
     cursor: pointer;
     font-size: 35px;
@@ -25,39 +28,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .carousel-button.left {
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.8);
+        transition: 1s ease;
+    }
+}
+
+.carousel-button.left {
     left: 10px;
-  }
-  
-  .carousel-button.right {
+}
+
+.carousel-button.right {
     right: 10px;
-  }
-  
-  .carousel-button:hover {
-    background: rgba(0, 0, 0, 0.8);
-    transition: 1s ease;
-  }
-
-  @media screen and (max-width: 480px) {
-    .carousel-image{
-      width: 335px;
-      height: 255px;
-    }
-
-    .logement-page .carousel-button{
-      background: none;
-    font-size: 25px;
-    }
-
-.carousel{
-  padding-top: 10%;
 }
 
-.carousel-image{
-  border-radius: 10px;
+@include responsive(mobile) {
+    .carousel {
+        padding-top: 10%;
+    }
+
+    .carousel-image {
+        width: 335px;
+        height: 255px;
+        border-radius: $border-radius;
+    }
+
+    .logement-page .carousel-button {
+        background: none;
+        font-size: 25px;
+    }
 }
-    
-  }
-  
