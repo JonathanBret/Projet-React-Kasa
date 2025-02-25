@@ -5,8 +5,13 @@ import Logement from "../pages/Logement";
 import ErrorPage from "../pages/ErrorPage"; 
 
 const AppRouter = () => {
+  const futureFlags = {
+    v7_startTransition: true,
+    v7_relativeSplatPath: true
+  };
+
   return (
-    <Router>
+    <Router future={futureFlags}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/propos" element={<Propos />} />
