@@ -53,7 +53,7 @@ LogementInfo.propTypes = {
     rating: PropTypes.number.isRequired,
     description: PropTypes.string.isRequired,
     equipments: PropTypes.arrayOf(PropTypes.string).isRequired,
-    pictures: PropTypes.arrayOf(PropTypes.string).isRequired, // ✅ Ajout ici
+    pictures: PropTypes.arrayOf(PropTypes.string).isRequired, 
   }).isRequired,
 };
 

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import Header from "../components/Header"; // Importation du Header
+import Header from "../components/Header"; 
 import "../style/ErrorPage.scss";
 
 const ErrorPage = () => {
   return (
     <>
-      <Header /> {/* Ajout du Header ici */}
+      <Header />
       <div className="error-page">
         <h1>404</h1>
         <p>Oups ! La page que vous demandez n&apos;existe pas.</p>
