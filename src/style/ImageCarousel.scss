@@ -1,5 +1,5 @@
-@use "../style/mixins" as *;
-@use "../style/variables" as *;
+@use "./variables" as *;
+@use "./mixins" as *;
 
 .carousel {
     position: relative;
@@ -43,7 +43,7 @@
     right: 10px;
 }
 
-@include responsive(mobile) {
+@include responsive($mobile) {
     .carousel {
         padding-top: 10%;
     }

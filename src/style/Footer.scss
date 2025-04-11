@@ -1,4 +1,5 @@
-@use "../style/mixins" as *;
+@use "./variables" as *;
+@use "./mixins" as *;
 
 .footer {
     background-color: black;
@@ -19,7 +20,7 @@
     font-size: 14px;
 }
 
-@include responsive(mobile) {
+@include responsive($mobile) {
     .footer {
         margin-top: 0;
     }

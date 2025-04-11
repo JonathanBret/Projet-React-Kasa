@@ -6,9 +6,11 @@
     }
 }
 
+$mobile: 375px;
+
 @mixin responsive($size) {
-    @if $size == mobile {
-        @media screen and (max-width: 375px) { @content; }
+    @if $size == $mobile { 
+        @media screen and (max-width: $mobile) { @content; }
     }
 }
 
@@ -16,4 +18,3 @@
     font-size: $size;
     margin: $margin;
 }
-

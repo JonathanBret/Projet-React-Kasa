@@ -1,5 +1,5 @@
-@use "../style/mixins" as *;
-@use "../style/variables" as *;
+@use "./variables" as *;
+@use "./mixins" as *;
 
 header {
     display: flex;
@@ -47,7 +47,7 @@ header {
     background-color: black; 
 }
 
-@include responsive(mobile) {
+@include responsive($mobile) {
     .header {
         width: 375px;
         padding-bottom: 15px;

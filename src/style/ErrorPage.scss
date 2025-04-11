@@ -1,5 +1,5 @@
-@use "../style/variables" as *;
-@use "../style/mixins" as *;
+@use "./variables" as *;
+@use "./mixins" as *;
 
 .error-page {
     display: flex;
@@ -44,7 +44,7 @@
     }
 }
 
-@include responsive(mobile) {
+@include responsive($mobile) {
     .error-page {
         h1 {
             font-size: 6rem;

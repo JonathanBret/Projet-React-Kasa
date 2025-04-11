@@ -1,5 +1,5 @@
-@use "../style/variables" as *; 
-@use "../style/mixins" as *;
+@use "./variables" as *;
+@use "./mixins" as *;
 
 .dropdown-list {
     width: 60%;
@@ -38,7 +38,7 @@
     font-weight: 300;
 }
 
-@include responsive(mobile) {
+@include responsive($mobile) {
     .dropdowns-container {
         display: flex;
         flex-direction: column;
