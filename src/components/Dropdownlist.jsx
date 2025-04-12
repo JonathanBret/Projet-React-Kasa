@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../style/DropdownList.scss";
+import "../style/Dropdownlist.scss";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa"; 
 
 const data = [
